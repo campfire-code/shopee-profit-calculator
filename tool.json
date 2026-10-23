@@ -1,0 +1,13 @@
+{
+  "id": "e18",
+  "slug": "shopee-profit-calculator",
+  "name": "虾皮选品利润计算器",
+  "version": "0.1.0",
+  "repo": "campfire-code/shopee-profit-calculator",
+  "license": "MIT",
+  "ui": {
+    "layout": "c",
+    "palette": "orange"
+  },
+  "upstream": null
+}

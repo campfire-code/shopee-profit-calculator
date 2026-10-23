@@ -1,0 +1,53 @@
+/* 虾皮选品利润计算器：只用 kit.css 的变量，类名统一以 sp- 开头。 */
+.sp-root { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 12px; }
+.sp-tabs { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.sp-sp { flex: 1; }
+.sp-warn-chip { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 999px; background: var(--warn-soft); color: var(--warn); font-size: .88em; }
+.neg { color: var(--err); }
+.sp-r { text-align: right; }
+.sp-foot { margin: 0; padding: 10px 14px 12px; font-size: .88em; line-height: 1.6; }
+
+/* ---- 单品 ---- */
+.sp-single { flex: 1; min-height: 0; display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; overflow: auto; }
+.sp-form { flex: 1 1 340px; max-width: 460px; padding: 14px; display: grid; gap: 12px; }
+.sp-grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 12px; align-items: start; }
+.sp-form .k-unit, .sp-target .k-unit { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: .88em; pointer-events: none; }
+.sp-form .k-input-wrap .k-input, .sp-target .k-input-wrap .k-input { padding-right: 40px; }
+.sp-rates-brief { display: grid; gap: 3px; padding: 10px 12px; border-radius: var(--radius); background: var(--chip); font-size: .9em; }
+.sp-rates-hd { display: flex; align-items: center; gap: 8px; }
+.sp-result { flex: 999 1 420px; min-width: 0; padding: 0; overflow: hidden; }
+.sp-hero { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-end; justify-content: space-between; padding: 16px 16px 12px; border-bottom: 1px solid var(--line); }
+.sp-hero > div:first-child { display: grid; gap: 2px; }
+.sp-big { font-size: 2.3em; line-height: 1.15; font-weight: 700; letter-spacing: -.01em; }
+.sp-kpis { display: flex; gap: 22px; flex-wrap: wrap; }
+.sp-kpis span { display: grid; gap: 1px; }
+.sp-kpis b { font-size: 1.2em; }
+.sp-alert { display: flex; align-items: center; gap: 8px; margin: 10px 14px 0; padding: 8px 12px; border-radius: var(--radius); background: var(--err-soft); color: var(--err); }
+.sp-break { margin: 6px 0 0; }
+.sp-break td { padding: 6px 16px; }
+.sp-break td:last-child { text-align: right; white-space: nowrap; }
+.sp-break .sp-sub td { border-top: 1px solid var(--line); font-weight: 600; }
+.sp-break .sp-total td { border-top: 1px solid var(--line-strong); font-weight: 700; font-size: 1.05em; }
+.sp-target { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px 24px; margin: 8px 14px 0; padding: 12px 14px; border-radius: var(--radius); background: var(--primary-soft); }
+.sp-target .k-field { width: 150px; }
+.sp-target-out { display: grid; gap: 1px; }
+.sp-target-out b { font-size: 1.25em; color: var(--primary); }
+.sp-need { display: grid; justify-items: start; gap: 10px; padding: 22px; color: var(--warn); }
+.sp-need .k-muted { line-height: 1.7; }
+
+/* ---- 批量 ---- */
+.sp-batch-empty { flex: 1; min-height: 0; display: grid; align-content: start; gap: 12px; }
+.sp-batch-empty .k-drop.big { min-height: 150px; }
+.sp-batch { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 10px; }
+.sp-batch-bar { display: flex; align-items: center; gap: 10px 14px; flex-wrap: wrap; }
+.sp-file { display: inline-flex; align-items: center; gap: 6px; max-width: 260px; font-weight: 600; }
+.sp-table-wrap { flex: 1; min-height: 0; overflow: auto; }
+.sp-name { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ---- 费率设置 ---- */
+.sp-rates { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 10px; }
+.sp-banner { display: flex; gap: 10px; align-items: flex-start; padding: 10px 14px; border-radius: var(--radius); background: var(--warn-soft); color: var(--warn); line-height: 1.6; }
+.sp-banner svg { flex: none; margin-top: 3px; }
+.sp-rate-table th { white-space: nowrap; }
+.sp-cell { width: 86px; height: 28px; padding: 0 6px; text-align: right; }
+.sp-bad { font-size: .85em; }
